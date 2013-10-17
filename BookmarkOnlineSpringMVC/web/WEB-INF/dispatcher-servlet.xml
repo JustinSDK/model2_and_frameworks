@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="Big5"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+">
+  
+    <!-- Models -->  
+    <bean id="bookmarkDAO" class="cc.openhome.model.BookmarkDAOImpl"> 
+        <constructor-arg type="java.lang.String">
+            <value>C:\workspace\BookmarkOnlineSpringMVC\web\WEB-INF\bookmarks.txt</value>
+        </constructor-arg> 
+    </bean> 
+    
+    <bean id="bookmarkService" class="cc.openhome.model.BookmarkService"> 
+        <constructor-arg ref="bookmarkDAO"/>
+    </bean> 
+    
+    <!-- Spring MVC -->
+    
+    <bean id="securityInterceptor" class="cc.openhome.web.SecurityInterceptor" 
+          p:loginPage="login.jsp"/>
+    
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"
+          p:interceptors-ref="securityInterceptor"/>
+    
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>  
+        <property name="prefix" value="/"/>  
+        <property name="suffix" value=".jsp"/>  
+    </bean>
+    
+    <bean id="paraMethodResolver" 
+          class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver"
+          p:paramName="action"
+          p:defaultMethodName="list"/>
+    
+    <bean id="bookmarkFormValidator" 
+          class="cc.openhome.web.BookmarkValidator"/>
+    
+    <bean name="/bookmarks" class="cc.openhome.controller.BookmarkController"
+          p:methodNameResolver-ref="paraMethodResolver"
+          p:bookmarkService-ref="bookmarkService"
+          p:validators-ref="bookmarkFormValidator"/>        
+    
+    <bean name="/login" class="cc.openhome.controller.UserController"
+          p:successView="index"
+          p:formView="login"
+          p:username="caterpillar"
+          p:password="123456"/>        
+    
+</beans>

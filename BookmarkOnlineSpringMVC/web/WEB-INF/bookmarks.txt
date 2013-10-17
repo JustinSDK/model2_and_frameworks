@@ -1,0 +1,3 @@
+doc.openhome.cc,良葛格學習筆記,程式設計
+www.javaworld.com.tw/roller/caterpillar,良葛格BLOG,部落格
+twitter.com/catarpillar,良葛格Twitter,Twitter

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="default" extends="struts-default">
+        <interceptors>
+            <interceptor name="security" class="cc.openhome.web.SecurityInterceptor"/>
+        </interceptors>
+        <action name="add" class="cc.openhome.controller.AddAction">
+            <result>/success.jsp</result>
+            <result name="input">/add.jsp</result>
+            <result name="login">/login.jsp</result>
+            <interceptor-ref name="security"/>
+            <interceptor-ref name="defaultStack"/>
+        </action>
+        <action name="login" class="cc.openhome.controller.LoginAction">
+            <result>/index.html</result>
+            <result name="input">/login.jsp</result>
+            <param name="user">caterpillar</param>
+            <param name="passwd">123456</param>
+        </action>
+    </package>
+</struts>
