@@ -1,15 +1,15 @@
 
-Model 2 ¬[ºc»P®Ø¬[®M¥Î
+Model 2 æ¶æ§‹èˆ‡æ¡†æ¶å¥—ç”¨
 =====================
 
-¬°¤F Java ½Òµ{¦Ó·Ç³Æªºµ{¦¡½d¨Ò¡A±N¤@­Ó Servlet/JSP ¤â¤u¨èªº Model 2 ¬[ºc µ{¦¡®M¤W¦UºØ®Ø¬[¡A¥Î¥HÅé·|¦UºØ®Ø¬[¦b®M¥Î®Éªº²§¦P¡A±M®×¬O NetBeans IDE ¬[ºc¡C
+ç‚ºäº† Java èª²ç¨‹è€Œæº–å‚™çš„ç¨‹å¼ç¯„ä¾‹ï¼Œå°‡ä¸€å€‹ Servlet/JSP æ‰‹å·¥åˆ»çš„ Model 2 æ¶æ§‹ ç¨‹å¼å¥—ä¸Šå„ç¨®æ¡†æ¶ï¼Œç”¨ä»¥é«”æœƒå„ç¨®æ¡†æ¶åœ¨å¥—ç”¨æ™‚çš„ç•°åŒï¼Œå°ˆæ¡ˆæ˜¯ NetBeans IDE æ¶æ§‹ã€‚
 
- - BookmarkOnline¡G¥Î Servlet/JSP ¤â¤u¨èªº Model 2 ¬[ºcµ{¦¡
- - BookmarkOnlineStruts2¡G±N BookmarkOnline ®M¤W Struts 2
- - BookmarkOnlineSpringMVC¡G±N BookmarkOnline ®M¤W Spring MVC
- - BookmarkOnlineStruts2Spring¡G±N BookmarkOnlineStruts2 ¦A±µ¤W Spring DI
+ - BookmarkOnlineï¼šç”¨ Servlet/JSP æ‰‹å·¥åˆ»çš„ Model 2 æ¶æ§‹ç¨‹å¼
+ - BookmarkOnlineStruts2ï¼šå°‡ BookmarkOnline å¥—ä¸Š Struts 2
+ - BookmarkOnlineSpringMVCï¼šå°‡ BookmarkOnline å¥—ä¸Š Spring MVC
+ - BookmarkOnlineStruts2Springï¼šå°‡ BookmarkOnlineStruts2 å†æ¥ä¸Š Spring DI
 
-¨Ó¦Û¡G[OpenHome][1]
+ä¾†è‡ªï¼š[OpenHome][1]
 
 
-  [1]: http://openhome.cc "¨Ó¦Û openhome.cc"
+  [1]: http://openhome.cc "ä¾†è‡ª openhome.cc"
